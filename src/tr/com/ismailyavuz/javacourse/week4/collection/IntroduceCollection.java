@@ -13,9 +13,6 @@ public class IntroduceCollection {
 		a.add(new Student());
 		Human human = a.get(0);
 		
-		ArrayList -> List -> Collection
-		
-		
 	}
 
 }
