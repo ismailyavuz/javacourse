@@ -49,6 +49,7 @@ public class StudentRunner {
 		StudentIntroducableFromOldStudent studentIntroducableFromOldStudent 
 		= new StudentIntroducableFromOldStudent(cem);
 		studentIntroducableFromOldStudent.introduce();
-		
+	
+		//GOTO HumanRunner
 	}
 }

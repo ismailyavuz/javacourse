@@ -1,13 +1,14 @@
-package tr.com.ismailyavuz.javacourse.week4.human;
+package tr.com.ismailyavuz.javacourse.week5.abstractrunner;
 
-public class HumanRunner {
+public class AbstractHumanRunner {
 	public static void main(String[] args) {
-		//Parent/Child/SuperType/Extends/Inheritance
-		Human human = new Human();
+
+		//Abstract Class
+		Human human = new Student(); //Can not use new Human()
 		human.age = 34;
 		human.name = "adem";
 		human.introduce();
-		
+
 		Student student = new Student();
 		student.age = 34;
 		student.name = "ismail";
@@ -20,14 +21,12 @@ public class HumanRunner {
 		worker.salary = 23456;
 		worker.introduce();
 		
-		//Polymorphism
 		Human workerButHuman = worker;
 
 		workerButHuman.introduce();
 		Human studentButHuman = student;
 		studentButHuman.introduce();
 		
-		//Dynamic binding
 		Retired retired = new Retired();
 		retired.age = 98;
 		retired.name = "Mehmet emmi";
@@ -42,5 +41,6 @@ public class HumanRunner {
 			insan.introduce();
 		}
 		
+	
 	}
 }
